@@ -14,7 +14,7 @@ export function TaskForm({ task, categories, onSubmit, onClose }: TaskFormProps)
     title: '',
     description: '',
     priority: 1,
-    status: 'pending' as const,
+    status: 'pending' as 'pending' | 'in_progress' | 'completed' | 'cancelled',
     due_date: '',
     category_id: undefined as number | undefined,
   });
